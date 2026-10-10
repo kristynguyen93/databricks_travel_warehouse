@@ -21,6 +21,10 @@ A Databricks data warehouse that combines U.S. flight records, airport reference
 | OurAirports | Airport reference data (names, coordinates, region, type) | https://ourairports.com/data/ |
 | Open-Meteo Historical Forecast API | Daily weather per airport | https://open-meteo.com/en/docs/historical-forecast-api |
 
+## Sample business uses
+1. Which airlines have the highest cancellation and delay rates, and what causes them?
+2. How much does weather at the origin airport affect delays and cancellations?
+3. Which time of day has the worst delays?
 ---
 
 ## Notebooks
@@ -35,6 +39,7 @@ Run them in this order:
 | 4 | `silver_travel_airlines` | `bronze_travel.airlines` | `silver_travel.airlines` |
 | 5 | `silver_travel_weather` | `bronze_travel.weather` | `silver_travel.weather` |
 | 6 | `gold_travel` | All four `silver_travel` tables | `gold_travel.fact_flights`, `dim_airlines`, `dim_airports`, `fact_weather` |
+
 
 ---
 
